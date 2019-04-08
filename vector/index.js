@@ -16,7 +16,7 @@ function drawVector(v, trans) {
   ctx.lineTo(v.length() - 5, 4);
   ctx.lineTo(v.length(), 0);
 
-  ctx.strokeStyle = "#29715f";
+  ctx.strokeStyle = "#714da3";
   ctx.lineWidth = 3;
   ctx.stroke();
   ctx.restore();
@@ -31,10 +31,6 @@ function draw() {
   const v1 = new Vector(250, 0);
   const v2 = new Vector(0, 200);
   const v3 = v1.add(v2).mul(-1);
-  //   ctx.translate(ww / 2, wh / 2);
-  //   drawVector(v1, true);
-  //   drawVector(v2, true);
-  //   drawVector(v3, true);
   const c = new Vector(ww / 2, wh / 2);
   ctx.restore();
   ctx.save();
@@ -98,26 +94,3 @@ Vector.prototype.angle = function() {
   return Math.atan2(this.y, this.x);
 };
 
-// console.clear();
-
-// const a = new Vector(4, 0);
-// const b = new Vector(0, 3);
-// const c1 = a.add(b);
-// const c2 = a.sub(b);
-
-// console.log(`${a}+${b}=${c1}`);
-// console.log(`${a}-${b}=${c2}`);
-
-// const b2 = b.mul(2);
-// console.log(`${b} * 2 =${b2}`);
-// console.log(`${c2} 的長度=${c2.length()}`);
-
-// const temp = new Vector(4, 3);
-// console.log(`${c1} 和${temp} 一樣嗎？${c1.equal(temp)}`);
-
-// const newA = a.clone();
-// console.log("clone" + newA);
-
-// newA.move(2, 3);
-// console.log("move" + newA);
-// console.log("a" + a);
