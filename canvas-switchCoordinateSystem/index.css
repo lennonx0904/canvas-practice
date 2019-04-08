@@ -1,0 +1,17 @@
+*{
+box-sizing: border-box;
+}
+
+html,body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+}
+
+#myCanvas{
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0,.3);
+    max-width: 100%;
+}
